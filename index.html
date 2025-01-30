@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,10 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        "green-1": '#179800',
+                        "secondary": '#EFEBE3',
+                        "black-1": '#111111',
+                        "white-1": '#FFFFFF'
                     }
                 }
             }
@@ -35,7 +39,7 @@
 
     <!-- fonts -->
     <style>
-        .font-sora{
+        .font-sora {
             font-family: "Sora", serif;
         }
     </style>
@@ -43,7 +47,123 @@
     <title>Nature platter</title>
 </head>
 
-<body>
+<body class="max-w-[1600px] mx-auto bg-slate-400">
+
+
+
+    <header class="w-full flex flex-col justify-center items-center bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-[8.75rem]">
+
+        <!-- navbar -->
+
+        <nav class="w-[95%] lg:w-[90%] flex justify-between items-center lg:py-4 mb-[3rem] md:mb-[8.25rem]">
+
+            <div class="md:w-full">
+                <img class="hidden md:block" src="./c2-assets/logo-header.png" alt="logo">
+                <img class="block md:hidden" src="./c2-assets/mobile-logo.png" alt="mobile-logo">
+            </div>
+
+            <ul class="hidden w-full md:flex items-center">
+                <li class="ml-8"><a class="font-sora text-[1.25rem] text-black-1" href="#">Product</a></li>
+                <li class="ml-8"><a class="font-sora text-[1.25rem] text-black-1" href="#">Services</a></li>
+                <li class="ml-8"><a class="font-sora text-[1.25rem] text-black-1" href="#">Contact us</a></li>
+            </ul>
+
+            <ul class="hidden md:flex items-center">
+                <a class="text-[1.5rem] ml-8" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="text-[1.5rem] ml-8" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <button
+                    class="font-sora text-black-1 border-[1px] rounded-[0.5rem] border-green-1 bg-transparent py-[0.625rem] px-[1.875rem] ml-8">Login</button>
+
+
+                <button
+                    class="font-sora text-black-1 border-0 outline-0 rounded-[0.5rem] bg-green-1 py-[0.625rem] px-[1.875rem] text-white-1 ml-8">Register</button>
+
+
+
+            </ul>
+            <a class="block md:hidden" href="#"><img src="./c2-assets/hamburger.png" alt="menu"></a>
+        </nav>
+
+
+        <!-- banner section -->
+
+        <section class="w-[95%]">
+            <h1 class="font-sora font-semibold text-center text-black-1 text-[2rem] md:text-[3.5rem] mb-4 md:mb-8">Freshness <span class="text-green-1">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+
+            <p class="font-sora text-center text-[1rem] md:text-[1.25rem] text-black-1 mb-4 md:mb-[2.3125rem]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+
+            <div class="w-full">
+                <img class="w-full h-auto block" src="./c2-assets/hero-vegetables.png" alt="vegetables in bag">
+            </div>
+
+        </section>
+
+    </header> 
+
+
+    <main class="w-full flex justify-between items-center ">
+        
+
+
+        <!-- service section -->
+
+        <section class="px-4 md:px-[8.75rem] mb-12 md:mb-8">
+            <h4 class="font-sora font-semibold text-[2.25rem] text-green-1 mb-[2rem] md:mb-[3rem]">Services</h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-[1.5rem] gap-y-[1.25rem] md:gap-y-0">
+
+                <div class="flex flex-col items-center p-[2rem] bg-secondary rounded-[1rem]">
+
+                    <div class="avatar mb-[1.5rem] ">
+                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-2">
+                          <img src="./c2-assets/service.png" />
+                        </div>
+                      </div>
+
+                      <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
+                      <p class="font-sora text-center text-[1.25rem] font-light text-black-1">Our 24/7 services ensure reliability, instant support, and seamless assistance anytime you need.</p>
+
+                </div>
+
+                <div class="flex flex-col items-center p-[2rem] bg-secondary rounded-[1rem]">
+
+                    <div class="avatar mb-[1.5rem] ">
+                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-2">
+                          <img src="./c2-assets/delivery.png" />
+                        </div>
+                      </div>
+
+                      <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
+                      <p class="font-sora text-center text-[1.25rem] font-light text-black-1">Our first delivery ensures speed, reliability, and customer satisfaction with prompt, hassle-free service.</p>
+
+                </div>
+
+
+                <div class="flex flex-col items-center p-[2rem] bg-secondary rounded-[1rem]">
+
+                    <div class="avatar mb-[1.5rem] ">
+                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-2">
+                          <img src="./c2-assets/healthy.png" />
+                        </div>
+                      </div>
+
+                      <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
+                      <p class="font-sora text-center text-[1.25rem] font-light text-black-1">Our healthy products are natural, nutritious, and designed to promote overall well-being daily.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
     <script src="script.js"></script>
 </body>
 
