@@ -18,7 +18,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
     <!-- colors -->
     <script>
@@ -28,6 +30,10 @@
                     colors: {
                         clifford: '#da373d',
                         "green-1": '#179800',
+                        "green-2": '#115414',
+                        "green-3": '#63B76D',
+                        "blue-1": '#102861',
+                        "blue-2": '#2A4D97',
                         "secondary": '#EFEBE3',
                         "black-1": '#111111',
                         "white-1": '#FFFFFF'
@@ -39,27 +45,41 @@
 
     <!-- fonts -->
     <style>
+        :root {
+            --black-2: rgba(17, 17, 17, 0.7);
+            --border: rgba(17, 17, 17, 0.1);
+        }
+
         .font-sora {
             font-family: "Sora", serif;
+        }
+
+        .font-adlam {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .font-poppins {
+            font-family: "Poppins", serif;
         }
     </style>
 
     <title>Nature platter</title>
 </head>
 
-<body class="max-w-[1600px] mx-auto bg-slate-400">
+<body class="max-w-[1600px] mx-auto">
 
 
 
-    <header class="w-full flex flex-col justify-center items-center bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-[8.75rem]">
+    <header
+        class="w-full flex flex-col justify-center items-center bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-[3rem] md:mb-[8.75rem]">
 
         <!-- navbar -->
 
-        <nav class="w-[95%] lg:w-[90%] flex justify-between items-center lg:py-4 mb-[3rem] md:mb-[8.25rem]">
+        <nav class="w-[100%] lg:w-[90%] flex justify-between items-center lg:py-4 mb-[3rem] md:mb-[8.25rem] border bottom-[1px] border-solid border-green-3 ">
 
             <div class="md:w-full">
                 <img class="hidden md:block" src="./c2-assets/logo-header.png" alt="logo">
-                <img class="block md:hidden" src="./c2-assets/mobile-logo.png" alt="mobile-logo">
+                <img class="block md:hidden" src="./c2-assets/mobile-logo.svg" alt="mobile-logo">
             </div>
 
             <ul class="hidden w-full md:flex items-center">
@@ -88,53 +108,59 @@
         <!-- banner section -->
 
         <section class="w-[95%]">
-            <h1 class="font-sora font-semibold text-center text-black-1 text-[2rem] md:text-[3.5rem] mb-4 md:mb-8">Freshness <span class="text-green-1">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+            <h1 class="font-sora font-semibold text-center text-black-1 text-[2rem] md:text-[3.5rem] mb-4 md:mb-8 animate-pulse">
+                Freshness <span class="text-green-1">You Can <br> Count</span> On, Prices You’ll Love!</h1>
 
-            <p class="font-sora text-center text-[1rem] md:text-[1.25rem] text-black-1 mb-4 md:mb-[2.3125rem]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <p class="font-sora text-center text-[1rem] md:text-[1.25rem] text-black-1 mb-4 md:mb-[2.3125rem]">Shop your
+                daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered
+                every day!</p>
 
-            <div class="w-full">
+            <div class="w-full relative">
                 <img class="w-full h-auto block" src="./c2-assets/hero-vegetables.png" alt="vegetables in bag">
             </div>
 
         </section>
 
-    </header> 
+    </header>
 
 
-    <main class="w-full flex justify-between items-center ">
-        
+    <main class="w-full flex flex-col mb-[22.6rem] md:mb-[10.125rem] ">
+
 
 
         <!-- service section -->
 
-        <section class="px-4 md:px-[8.75rem] mb-12 md:mb-8">
-            <h4 class="font-sora font-semibold text-[2.25rem] text-green-1 mb-[2rem] md:mb-[3rem]">Services</h4>
+        <section class="px-4 md:px-[8.75rem] pb-[2rem] md:pb-[8.75rem]">
+            <h4 class="font-sora font-semibold text-[1.5rem] md:text-[2.25rem] text-green-1 mb-[2rem] md:mb-[3rem]">
+                Services</h4>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-x-[1.5rem] gap-y-[1.25rem] md:gap-y-0">
 
                 <div class="flex flex-col items-center p-[2rem] bg-secondary rounded-[1rem]">
 
                     <div class="avatar mb-[1.5rem] ">
-                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-2">
-                          <img src="./c2-assets/service.png" />
+                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-3">
+                            <img src="./c2-assets/service.png" />
                         </div>
-                      </div>
+                    </div>
 
-                      <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
-                      <p class="font-sora text-center text-[1.25rem] font-light text-black-1">Our 24/7 services ensure reliability, instant support, and seamless assistance anytime you need.</p>
+                    <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
+                    <p class="font-sora text-center text-[1rem] md:text-[1.25rem] font-light text-black-1">Our 24/7 services ensure
+                        reliability, instant support, and seamless assistance anytime you need.</p>
 
                 </div>
 
                 <div class="flex flex-col items-center p-[2rem] bg-secondary rounded-[1rem]">
 
                     <div class="avatar mb-[1.5rem] ">
-                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-2">
-                          <img src="./c2-assets/delivery.png" />
+                        <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-3">
+                            <img src="./c2-assets/delivery.png" />
                         </div>
-                      </div>
+                    </div>
 
-                      <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
-                      <p class="font-sora text-center text-[1.25rem] font-light text-black-1">Our first delivery ensures speed, reliability, and customer satisfaction with prompt, hassle-free service.</p>
+                    <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">Fast Delivery </h5>
+                    <p class="font-sora text-center text-[1rem] md:text-[1.25rem] font-light text-black-1">Our first delivery ensures
+                        speed, reliability, and customer satisfaction with prompt, hassle-free service.</p>
 
                 </div>
 
@@ -143,12 +169,453 @@
 
                     <div class="avatar mb-[1.5rem] ">
                         <div class="ring-offset-base-100 w-24 rounded-full bg-white ring-offset-2 p-2">
-                          <img src="./c2-assets/healthy.png" />
+                            <img src="./c2-assets/healthy.png" />
                         </div>
-                      </div>
+                    </div>
 
-                      <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">24/7 Services </h5>
-                      <p class="font-sora text-center text-[1.25rem] font-light text-black-1">Our healthy products are natural, nutritious, and designed to promote overall well-being daily.</p>
+                    <h5 class="font-sora font-semibold text-black-1 mb-[0.75rem]">Healthy Products  </h5>
+                    <p class="font-sora text-center text-[1rem] md:text-[1.25rem] font-light text-black-1">Our healthy products are
+                        natural, nutritious, and designed to promote overall well-being daily.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Recently Viewed -->
+
+        <section class="px-4 py-[3rem] md:px-[8.75rem] pb-[2rem] md:pb-[8.75rem]">
+            <h4 class="font-sora font-semibold text-[1.5rem] md:text-[2.25rem] text-green-1 mb-[2rem] md:mb-[3rem]">
+                Recently Viewed</h4>
+
+
+
+        <!-- grid container -->
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-[1.5rem] gap-y-[1.25rem] md:gap-y-0  ">
+
+                <div class="card bg-base-100 rounded-lg transition-all  ">
+                    <figure>
+                      <img
+                        src="./c2-assets/broccoli.jpg"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body bg-lime-100 rounded-b-lg delay-300 duration-[1s] hover:bg-green-400">
+                      <h2 class="card-title text-rose-500 font-bold">Broccoli</h2>
+                      <p class="font-sora ">Fresh Broccoli in best prize!</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary font-sora border-0 outline-0">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="card bg-base-100  md:shadow-xl rounded-lg">
+                    <figure>
+                      <img
+                        src="./c2-assets/tomatoes.jpg"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body bg-rose-100 rounded-b-lg delay-300 duration-[1s] hover:bg-red-300">
+                      <h2 class="card-title text-green-900 font-bold font-sora">Tomato</h2>
+                      <p class="font-sora">Don't miss grab first this fresh tomatoes</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary bg-[red] font-sora border-0 outline-0">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="card bg-base-100   rounded-lg ">
+                    <figure>
+                      <img
+                        src="./c2-assets/carrot.webp"
+                        alt="Shoes" 
+                        />
+                    </figure>
+                    <div class="card-body bg-orange-100 rounded-b-lg delay-300 duration-[1s] hover:bg-orange-300">
+                      <h2 class="card-title text-fuchsia-600 font-bold font-sora">Carrots</h2>
+                      <p class="font-sora " >Full with vitamin A . Best for your child</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary font-sora border-0 outline-0">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>    
+
+
+
+        </section>
+        
+        <!-- popular product section -->
+
+        <section class="px-4 py-[3rem] md:px-[8.75rem] pb-[2rem] md:py-[8.75rem] bg-secondary w-full">
+            <h4 class="font-sora font-semibold text-[1.5rem] md:text-[2.25rem] text-green-1 mb-[2rem] md:mb-[3rem]">
+                Popular Products</h4>
+
+            <!-- flex container -->
+
+            <div class="flex gap-x-[1.5rem] gap-y-[1.5rem] md:gap-y-[0rem] flex-col md:flex-row">
+
+                <!-- single box -->
+                <div
+                    class="w-full md:w-[32%] pt-[2.6875rem] md:pt-[3.1875rem] pl-[1.625rem] md:pl-[2rem] bg-gradient-to-br from-[rgba(83,219,58,1)] to-[rgba(255,255,255,1)] md:relative rounded-[0.5rem]">
+
+                    <h5 class="font-adlam text-[2rem] text-white-1 mb-[1.5rem]">30% off</h5>
+                    <p class="font-sora text-[1rem] text-[var(--black-2)] mb-[1.5rem] z-10">Discover a world of treats,
+                        toys, and essentials handpicked for </p>
+                    <button class="font-sora px-[2rem] py-[1rem] bg-white-1 rounded-[0.5rem]">Buy Now</button>
+                    <div class="w-1/2">
+                        <img class="relative -right-[158px]  md:absolute md:right-0 md:bottom-0 "
+                            src="./c2-assets/vegetable-offer.png " alt="vegetable-offer">
+                    </div>
+
+                </div>
+
+                <!-- grid container -->
+
+                <div class="grid grid-cols-2 md:grid-cols-3 grid-row-4 md:grid-rows-3 gap-[0.89rem] md:gap-[1.4375rem]">
+
+
+                    <!-- onion -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem] ">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/onion.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Onion 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- tomato -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/tomato.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Tomato 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- potato -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/potato.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Potato 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium  text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- tomato -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem]  md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/tomato.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Tomato 500 g
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.999</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <!-- onion -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/onion.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3 items-center">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Onion 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <!-- tomato -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/tomato.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Tomato 500 g
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- onion -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/onion.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Onion 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <!-- potato -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 flex items-center gap-3 h-fit rounded-[0.5rem]">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/potato.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Potato 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- potato -->
+
+                    <div
+                        class="bg-white-1 border-[1px] border-[var(--border)] px-[0.625rem] md:px-4 py-[0.625rem] md:py-4 hidden md:flex items-center gap-3 h-fit rounded-[0.5rem] ">
+
+                        <!-- image div -->
+                        <div>
+                            <img class="h-[3.359375rem] md:h-[5.375rem] w-[3.359375rem] md:w-[5.375rem]"
+                                src="./c2-assets/potato.svg" alt="onion">
+                        </div>
+
+                        <!-- text-div -->
+
+                        <div class="flex flex-col justify-between gap-2">
+                            <!-- rating  -->
+                            <div class="flex gap-x-3">
+                                <img class="h-[0.703125rem] md:h-[1.125rem] w-[0.703125rem] md:w-[1.125rem]"
+                                    src="./c2-assets/rating-star.svg" alt="star">
+                                <p class="font-sora text-[0.625rem] md:text-[1rem] text-black-1">4.5</p>
+                            </div>
+
+                            <h4 class="font-sora font-medium text-[0.67rem] md:text-[1.25rem] text-black-1">Potato 1 KG
+                            </h4>
+
+                            <p class="font-sora font-medium text-[0.625rem] md:text-[1rem] text-black-1">$39.99</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
 
                 </div>
 
@@ -157,8 +624,171 @@
 
 
 
+        <!-- Arrival & offers -->
+
+        <section class="px-4 py-[3rem] md:px-[8.75rem] pb-[2rem] md:py-[8.75rem] w-full">
+            <h4 class="font-sora font-semibold text-[1.5rem] md:text-[2.25rem] text-green-1 mb-[2rem] md:mb-[3rem]">
+                Arrival & Offers</h4>
+
+            <!-- flex container -->
+            <div class="w-full md:flex gap-5 ">
+                <!-- item -1 -->
+
+                <div
+                    class="md:w-[60%] bg-green-2 rounded-[1rem]  py-3 pl-[1.187rem] md:pl-[2.5rem] flex justify-between items-center mb-4 md:mb-0">
+
+                    <!-- text -->
+                    <div class="flex flex-col">
+                        <img class="mb-[1.095rem] md:mb-[2rem]" src="./c2-assets/dawat-logo.png" alt="dawat-logo">
+                        <button
+                            class="font-poppins bg-green-3 rounded-[0.5rem] md:rounded-[0.83rem] text-[0.806rem] md:text-[1.254rem] text-white-1 mb-[0.921rem] md:mb-[1.663rem] py-[0.518rem] md:py-[0.9375rem] px-[0.5rem] md:px-[2.5rem]">Cook
+                            Exotic Dishes</button>
+                        <h3 class="text-center font-poppins text-white-1 font-bold text-[1.383rem] md:text-[2.492rem]">
+                            UP to 20% OFF</h3>
+                    </div>
+
+
+                    <!-- picture -->
+
+                    <div>
+                        <img src="./c2-assets/dawat-mock-up.png" alt="bag of rice">
+                    </div>
+                </div>
+
+
+                <!-- item -2 -->
+
+
+
+
+                <div
+                    class="bg-blue-1  rounded-[1rem] py-2 px-[1.187rem] md:px-[2.5rem] flex gap-5 items-center justify-between">
+
+                    <!-- text -->
+                    <div>
+                        <img class="mb-[1.095rem] md:mb-[2rem]" src="./c2-assets/india-gate-logo.png" alt="india gate">
+                        <button
+                            class="font-poppins bg-blue-2 rounded-[0.5rem] md:rounded-[0.83rem] text-[0.806rem] md:text-[1.254rem] text-white-1 mb-[0.921rem] md:mb-[1.663rem] py-[0.518rem] md:py-[0.9375rem] px-[0.5rem] md:px-[1.5rem]">World’s
+                            No.1 Rice</button>
+                        <h3 class="font-poppins text-white-1 font-bold text-[1.383rem] md:text-[2.492rem]">UP to 20% OFF
+                        </h3>
+                    </div>
+
+
+                    <!-- picture -->
+
+                    <div>
+                        <img src="./c2-assets/india-gate-mock-up.png" alt="bag of rice">
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+
 
     </main>
+
+
+
+    <!-- footer -->
+    <footer
+        class="footer bg-green-1 text-base-content flex flex-col md:flex-row justify-around items-start md:items-end pt-[25.5rem] md:pt-[23rem] pb-[3rem] md:pb-[8.75rem] px-[1rem] md:px-[8.75rem] relative">
+
+
+
+
+
+        <!-- footer child -->
+
+
+        <!-- flex container -->
+        <div class="bg-secondary py-[3.43rem] rounded-[1rem] sm:px-[1.5rem] sm:h-[50vh] md:flex justify-around items-center absolute   w-[92%] md:w-[82%] -top-[300px] md:-top-[250px]">
+
+            <!-- images -->
+            <div class="mb-[1.5rem]">
+                <img src="./c2-assets/vegetable-busket.png" alt="">
+            </div>
+
+
+            <!-- text -->
+            <div>
+
+                <div class="flex flex-col items-center">
+                    <h4
+                        class="font-sora font-semibold text-center md:text-left text-green-1 md:text-black-1 text-[1.375rem] md:text-[2.25rem] mb-[1.375rem]">
+                        Get Grocery News!</h4>
+                    <p class="font-sora text-center md:text-left text-black-1 mb-[2.5rem]">Exclusive training tips, ticks, product
+                        deals
+                        and more.</p>
+                </div>
+
+                <!-- form -->
+                <form action="" class="flex flex-col w-full items-center md:items-start">
+
+
+                    <input class="mb-[2.5rem] p-[1.12rem] w-[80%] rounded-[0.5rem]" type="text"
+                        placeholder="Enter email...">
+
+                    <button
+                        class="text-[1.25rem] text-white-1 font-sora py-[0.625rem] px-[1.875rem] bg-green-1 rounded-[0.5rem] w-[10.25rem]">
+                        Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+
+
+        <div class="flex flex-col md:flex-row justify-between w-[50%]">
+            <nav class=" self-end mb-4 sm:w-full">
+                <img class="mb-4" src="./c2-assets/logo-footer.png" alt="footer logo">
+                <p class="text-[0.8rem] md:text-[1.25rem] text-white-1 font-sora">Discover a world of treats, toys,
+                    and <br class="hidden md:block"> essentials handpicked for your furry <br class="hidden md:block">
+                    friends</p>
+            </nav>
+            <nav class=" md:self-end flex flex-col">
+                <a class="link link-hover font-sora text-[1.25re] text-secondary mb-[1.25rem] md:mb-[2rem]">Product</a>
+                <a class="link link-hover font-sora text-[1.25re] text-secondary mb-[1.25rem] md:mb-[2rem]">Services</a>
+                <a class="link link-hover font-sora text-[1.25re] text-secondary mb-[1.25rem] ">Contact us</a>
+            </nav>
+        </div>
+
+        <nav class="flex flex-col justify-items-end  items-baseline">
+            <h6 class="text-[1rem] text-secondary font-sora">Follow Us</h6>
+            <div class="grid grid-flow-col gap-4">
+
+                <a>
+                    <i class="fa-brands fa-facebook-f text-secondary "></i>
+                </a>
+
+                <a>
+                    <i class="fa-brands fa-instagram text-secondary"></i>
+                </a>
+
+
+                <a>
+                    <i class="fa-brands fa-linkedin text-secondary"></i>
+                </a>
+
+                <a>
+                    <i class="fa-brands fa-youtube text-secondary"></i>
+                </a>
+            </div>
+        </nav>
+
+
+    </footer>
 
 
 
